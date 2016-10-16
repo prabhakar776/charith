@@ -1,0 +1,97 @@
+/* reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	list-style:none;
+}
+
+body,td,th {
+	font-family: "Open Sans",  Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background:url(../images/bg-header.jpg) repeat-x top #FFFFFF;
+	
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#;
+	font-weight:normal;
+}
+
+#main_wrapper{
+	width:100%;
+	height:100%;
+	background:url(../images/bg_top_border.gif) repeat-x top;
+}
+
+/*header*/
+
+#wrapper_975{
+	width:975px;
+	margin:0 auto;
+}
+
+/*home mid content*/
+
+.boxgrid{width:225px; height:150px; margin:0; float:left; overflow: hidden; position: relative; background:#ccc;}
+.boxgrid img{position: absolute; top: 0; left: 0; border: 0; padding:0 0 30px 0}
+.boxcaption{float: left; position: absolute; background: #000; height:150px; width: 100%; color:#FFF; opacity: .8; 
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";}
+	
+.captionfull .boxcaption {top: 150px; left: 0;}
+.cap .boxcaption {top:120px;}
+
+.boxcaption h3 a{padding-left:5px; height:30px; line-height:30px; color:#FFF; display:block; font-size:16px;}
+
+.boxcaption h3.b1 a{background:#639EE4}
+.boxcaption h3.b2 a{background:#A878C4;}
+.boxcaption h3.b3 a{background:#6FD6E5;}
+.boxcaption h3.b4 a{background:#E1C31D;}
+.boxcaption h3.b5 a{background:#E68DA2;}
+.boxcaption h3.b6 a{background:#8BB54E;}
+.boxcaption h3.b7 a{background:#FFB422;}
+.boxcaption h3.b8 a{background:#F67B71;}
+.boxcaption h3.b9 a{background:#B7271B;}
+.boxcaption h3.b10 a{background:#F09BFA;}
+.boxcaption h3.b11 a{background:#348F70;}
+.boxcaption a{color:#FFFFFF; font-weight:normal;}
+.boxcaption h4{margin:10px 10px 10px 15px;}
+
+}
+
+.b-d-border{
+	border-right:1px dashed #C9C9C9;
+}
+
+
+
+
+
+
+
+
+
+
