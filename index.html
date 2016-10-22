@@ -55,34 +55,11 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li class="expanded dropdown "><a href="/about-us" data-target="#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
-						<ul class="dropdown-menu"><li class="first leaf"><a href="/about-us/history">History</a></li>
-							<li class="leaf"><a href="/about-us/vision-mission-values">Vision, Mission &amp; Values</a></li>
-							<li class="leaf"><a href="/about-us/leadership">Leadership</a></li>
-							<li class="leaf"><a href="/about-us/locations">Locations</a></li>
-							<li class="leaf"><a href="/corporate-social-responsibility">Corporate Social Responsibility</a></li>
-							<li class="leaf"><a href="/credentials">Credentials</a></li>
-							<li class="leaf"><a href="/client-testimonials">Client Testimonials</a></li>
-							<li class="last leaf"><a href="/about-us/hgs-excellence-charter">The HGS Excellence Charter</a></li>
-						</ul>
-					</li>
-					<li class="expanded dropdown "><a href="/services.html"" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-						<li class="first leaf"><a href="/about-us/history">History</a></li>
-						<li class="leaf"><a href="/about-us/vision-mission-values">Vision, Mission &amp; Values</a></li>
-						<li class="leaf"><a href="/about-us/leadership">Leadership</a></li>
-						<li class="leaf"><a href="/about-us/locations">Locations</a></li>
-						<li class="leaf"><a href="/corporate-social-responsibility">Corporate Social Responsibility</a></li>
-						<li class="leaf"><a href="/credentials">Credentials</a></li>
-						<li class="leaf"><a href="/client-testimonials">Client Testimonials</a></li>
-						<li class="last leaf"><a href="/about-us/hgs-excellence-charter">The HGS Excellence Charter</a></li>
-						</ul>
-					</li>
-					
-                    <li><a href="pages.html">pages</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-					<li class="expanded dropdown "><a href="Client.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Clients <span class="caret"></span></a>
+					<li class="active"><a href="index">Home</a></li>
+					<li><a href="about">About Us</a></li>
+					<li><a href="services">Services</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+					<li class="expanded dropdown "><a href="client" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Clients <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 						<li class="first leaf"><a href="http://www.airtel.com/" target="_blank">Airtel</a></li>
 						<li class="leaf"><a href="http://www.ideacellular.com/" target="_blank">Idea</a></li>
@@ -91,8 +68,8 @@
 						<li class="leaf"><a href="http://www.bsnl.co.in/" target="_blank">Bsnl</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Careers</a></li>
-					<li><a href="contact.php">Contact</a></li>
+					<li><a href="careers">Careers</a></li>
+					<li><a href="contact">Contact</a></li>
 
 				</ul>
 			</div>
@@ -257,7 +234,7 @@ Company is having 145 manpower strength in various telecom process with huge  ex
     </section>
  <center><a class="quoteimg" href="#">
 
-    <img src="assets/images/get-quote.PNG" id="rev10" alt="get-quote"></img>
+    <a href="contact"><img src="assets/images/get-quote.PNG" id="rev10" alt="get-quote"></img></a>
 
 </a></center>
 
@@ -284,13 +261,13 @@ Company is having 145 manpower strength in various telecom process with huge  ex
 					<div class="col-md-6 panel">
 						<div class="panel-body">
 							<p class="simplenav">
-                             <a href="index.html">Home</a> |
-					         <a href="about.html">About Us</a> |
-					         <a href="services.html">Services</a> |
-                             <a href="Gallery.html">Gallery</a> |
-					         <a href="Client.html">Clients</a> |
-					         <a href="#">Careers</a> |
-					         <a href="contact.php">Contact</a> |
+                             <a href="index">Home</a> |
+					         <a href="about">About Us</a> |
+					         <a href="services">Services</a> |
+                             <a href="gallery">Gallery</a> |
+					         <a href="client">Clients</a> |
+					         <a href="careers">Careers</a> |
+					         <a href="contact">Contact</a> 
 							</p>
 						</div>
 					</div>
@@ -298,7 +275,7 @@ Company is having 145 manpower strength in various telecom process with huge  ex
 					<div class="col-md-6 panel">
 						<div class="panel-body">
 							<p class="text-right">
-                                <p class="w3-link">© 2015 All Rights Reserved.Charith Enterprises Pvt Ltd | Design by&nbsp; <a href="http://itreegt.com/"> iTree Global Technologies</a></p>
+                                <p class="w3-link">Copyright &copy; <span id="copyrightyear"></span> Charith Enterprises Pvt Ltd.</a></p>
 
 							</p>
 						</div>
@@ -337,21 +314,11 @@ Company is having 145 manpower strength in various telecom process with huge  ex
 		});
 
 
+	var d = new Date()
+	document.getElementById("copyrightyear").innerHTML = d.getFullYear();
+</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</script>
-
+	
+	
 </body>
 </html>

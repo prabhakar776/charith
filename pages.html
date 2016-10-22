@@ -59,21 +59,22 @@
             </div>
             <div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="price.html">Price</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li class="dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+					<li><a href="index">Home</a></li>
+					<li><a href="about">About Us</a></li>
+					<li><a href="services">Services</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+					<li class="expanded dropdown "><a href="client" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Clients <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="sidebar-right.html">Right Sidebar</a></li>
-							<li><a href="#">Dummy Link1</a></li>
-							<li><a href="#">Dummy Link2</a></li>
-							<li><a href="#">Dummy Link3</a></li>
+						<li class="first leaf"><a href="http://www.airtel.com/" target="_blank">Airtel</a></li>
+						<li class="leaf"><a href="http://www.ideacellular.com/" target="_blank">Idea</a></li>
+						<li class="leaf"><a href="https://www.tatadocomo.com/en-in" target="_blank">Docomo</a></li>
+						<li class="leaf"><a href="http://www.vodafone.in/home-mumbai" target="_blank">Vodafone</a></li>
+						<li class="leaf"><a href="http://www.bsnl.co.in/" target="_blank">Bsnl</a></li>
 						</ul>
 					</li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="careers">Careers</a></li>
+					<li><a href="contact">Contact</a></li>
+
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -81,15 +82,21 @@
 	</div>
 	<!-- /.navbar -->
 
-	<header id="head" class="secondary">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8">
-					<h1>Lorem ipsum dolor sit amet</h1>
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<header id="head" class="secondary">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-8">
+								<h1>Lorem ipsum dolor sit amet</h1>
+							</div>
+						</div>
+					</div>
+				</header>
 			</div>
 		</div>
-	</header>
+	</div>
 
 	<!-- container -->
 	<section class="container">
@@ -197,12 +204,13 @@
 					<div class="col-md-6 panel">
 						<div class="panel-body">
 							<p class="simplenav">
-								<a href="index.html">Home</a> |
-								<a href="about.html">About</a> |
-								<a href="services.html">Services</a> |
-								<a href="price.html">Price</a> |
-								<a href="projects.html">Projects</a> |
-								<a href="contact.html">Contact</a>
+                             <a href="index">Home</a> |
+					         <a href="about">About Us</a> |
+					         <a href="services">Services</a> |
+                             <a href="gallery">Gallery</a> |
+					         <a href="client">Clients</a> |
+					         <a href="careers">Careers</a> |
+					         <a href="contact">Contact</a> 
 							</p>
 						</div>
 					</div>
@@ -210,7 +218,8 @@
 					<div class="col-md-6 panel">
 						<div class="panel-body">
 							<p class="text-right">
-								Copyright &copy; 2015. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a>
+                                <p class="w3-link">Copyright &copy; <span id="copyrightyear"></span> Charith Enterprises Pvt Ltd.</a></p>
+
 							</p>
 						</div>
 					</div>
@@ -226,5 +235,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script>
+	var d = new Date()
+	document.getElementById("copyrightyear").innerHTML = d.getFullYear();
+	</script>
 </body>
 </html>
